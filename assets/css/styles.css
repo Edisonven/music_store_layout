@@ -1,5 +1,6 @@
 :root {
   --font-color: #a7a2a2;
+  --color-primario: #ff00001c;
 }
 * {
   margin: 0;
@@ -9,9 +10,11 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #202020;
 }
+/*APARTADO CONTAINER*/
 .container {
   min-width: 380px;
 }
+/*APARTADO BARRA DE NAVEGACIÓN*/
 .navbar__container {
   background-color: black;
   width: 100%;
@@ -59,7 +62,7 @@ body {
   top: 100%;
   clip-path: circle(0% at top right);
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   align-items: center;
   padding-top: 50px;
   transition: linear 0.3s;
@@ -77,13 +80,14 @@ body {
   --open-icon: scale(0);
   --close-icon: scale(1);
 }
+/*APARTADO HEADER (FILTRO DE BÚSQUEDA*/
 .header__container {
   display: grid;
   place-items: center;
   padding: 20px 60px;
   width: 100%;
   background-color: #ff000011;
-  color: #fff;
+  color: var(--font-color);
   --arrow-down: scale(1);
   --arrow-up: scale(0);
 }
@@ -92,7 +96,6 @@ body {
   align-items: center;
   padding: 0px 20px;
   border-radius: 10px;
-  color: #fff;
   background-color: #ff00001c;
 }
 .header__searchbar:has(:checked) {
@@ -149,4 +152,52 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+/*APARTADO MENU PRINCIPAL*/
+.main__container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__cards {
+  display: flex;
+  color: var(--font-color);
+  flex-direction: column;
+  gap: 30px;
+}
+.main__card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  border: 1px solid #ffffff42;
+  border-radius: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #ff00001c;
+}
+.main__card__img {
+  border-radius: inherit;
+  width: 100%;
+}
+.main_card_text{
+    border-bottom: 1px solid #a7a2a2;
+}
+.main_card_text,
+.main__card__marca,
+.main__card__price {
+  padding: 10px 10px;
+}
+.main__card__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: var(--color-primario);
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid #ffffff42;
+  box-shadow: 5px 5px 10px #ff00001c;
 }
