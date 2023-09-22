@@ -12,11 +12,16 @@ body {
 }
 /*APARTADO CONTAINER*/
 .container {
+  display: grid;
   min-width: 380px;
 }
 /*APARTADO BARRA DE NAVEGACIÓN*/
+nav {
+  position: fixed;
+  width: 100%;
+}
 .navbar__container {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.87);
   display: grid;
   grid-template-columns: repeat(2, max-content);
   align-items: center;
@@ -81,6 +86,7 @@ body {
 }
 /*APARTADO HEADER (FILTRO DE BÚSQUEDA*/
 .header__container {
+  margin-top: 75px;
   display: grid;
   place-items: center;
   padding: 20px 60px;
@@ -183,8 +189,8 @@ body {
   border-radius: inherit;
   width: 100%;
 }
-.main_card_text{
-    border-bottom: 1px solid #a7a2a2;
+.main_card_text {
+  border-bottom: 1px solid #a7a2a2;
 }
 .main_card_text,
 .main__card__marca,
@@ -192,7 +198,8 @@ body {
   padding: 10px 10px;
 }
 .main__card__link {
-  display: inline-block;
+  display: flex;
+  gap: 10px;
   color: #fff;
   text-decoration: none;
   padding: 10px 30px;
@@ -201,9 +208,4 @@ body {
   margin-top: 15px;
   border: 1px solid #ffffff42;
   box-shadow: 5px 5px 10px #ff00001c;
-}
-@media(min-width:576px){
-    .main__cards{
-        flex-direction: row;
-    }
 }
