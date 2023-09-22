@@ -1,35 +1,34 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.navbar__container{
-    background-color: black;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    align-items: center;
-    justify-content: space-between;
-    grid-template-areas:
-    "logo hamburguesa" ;
-    padding: 10px 40px;
+.navbar__container {
+  background-color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: space-between;
+  grid-template-areas: "logo hamburguesa";
+  padding: 10px 20px;
 }
-.navbar__logo{
-    width: 150px;
-    padding-bottom: 10px;
+.navbar__logo {
+  width: 120px;
 }
-.navbar__header{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    grid-area: logo;
-    align-items: center;
+.navbar__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  grid-area: logo;
+  text-align: center;
 }
-.navbar__icons{
-    grid-area: hamburguesa;
+.navbar__icons {
+  grid-area: hamburguesa;
 }
-.navbar__links{
-    display: none;
+.navbar__links {
+  display: none;
 }
