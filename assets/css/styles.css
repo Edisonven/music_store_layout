@@ -17,7 +17,6 @@ body {
 /*APARTADO BARRA DE NAVEGACIÓN*/
 .navbar__container {
   background-color: black;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, max-content);
   align-items: center;
@@ -85,7 +84,6 @@ body {
   display: grid;
   place-items: center;
   padding: 20px 60px;
-  width: 100%;
   background-color: #ff000011;
   color: var(--font-color);
   --arrow-down: scale(1);
@@ -140,10 +138,10 @@ body {
   flex-direction: column;
   list-style: none;
   gap: 10px;
-  width: 100%;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
   padding: 0;
+  margin-bottom: 10px;
 }
 .header__link {
   display: flex;
@@ -166,6 +164,9 @@ body {
   color: var(--font-color);
   flex-direction: column;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .main__card {
   display: flex;
@@ -200,4 +201,9 @@ body {
   margin-top: 15px;
   border: 1px solid #ffffff42;
   box-shadow: 5px 5px 10px #ff00001c;
+}
+@media(min-width:576px){
+    .main__cards{
+        flex-direction: row;
+    }
 }
