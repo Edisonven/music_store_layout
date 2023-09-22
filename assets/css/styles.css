@@ -26,9 +26,9 @@ body {
 nav {
   position: fixed;
   width: 100%;
+  grid-area: navbar;
 }
 .navbar__container {
-  grid-area: navbar;
   background-color: rgba(0, 0, 0, 0.87);
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -40,6 +40,7 @@ nav {
   --close-icon: scale(0);
   position: relative;
   transition: linear 0.4s;
+  min-height: 80px;
 }
 .navbar__logo {
   width: 120px;
@@ -93,8 +94,10 @@ nav {
   --close-icon: scale(1);
 }
 /*APARTADO HEADER (FILTRO DE BÚSQUEDA*/
-.header__container {
+header {
   grid-area: header;
+}
+.header__container {
   margin-top: 75px;
   display: grid;
   place-items: center;
@@ -169,8 +172,10 @@ nav {
 }
 
 /*APARTADO MENU PRINCIPAL*/
-.main__container {
+main {
   grid-area: main;
+}
+.main__container {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
@@ -246,9 +251,10 @@ nav {
 }
 
 /*APARTADO FOOTER*/
-
-.footer__container {
+footer {
   grid-area: footer;
+}
+.footer__container {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -267,11 +273,13 @@ nav {
 .footer__logo__img {
   width: 150px;
 }
-.footer__section__title {
+.footer__section__title,
+.footer__social__title {
   margin: 30px 0;
   border-bottom: 1px solid var(--font-color);
   width: max-content;
 }
+
 .footer__section__list {
   display: flex;
   flex-direction: column;
@@ -285,10 +293,15 @@ nav {
 }
 .footer__social {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 60px 0;
+}
+.footer__social__icons {
+  display: flex;
+  gap: 40px;
 }
 .footer__content {
   display: flex;
@@ -297,4 +310,51 @@ nav {
 
 /*DESKTOP DESIGN*/
 @media (min-width: 576px) {
+  .container {
+    grid-template-columns: 300px auto;
+    grid-template-areas:
+      "navbar header"
+      "navbar header"
+      "navbar main"
+      "footer footer";
+  }
+  nav {
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+  .navbar__menu {
+    top: 5%;
+    left: -20px;
+    display: flex;
+    clip-path: circle(100% at top right);
+  }
+  .navbar__header {
+    flex-direction: column;
+  }
+  .navbar__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .navbar__icons {
+    display: none;
+  }
+  .main__cards {
+    flex-direction: row;
+  }
+  .header__container {
+    margin: 0;
+  }
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer__social {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
