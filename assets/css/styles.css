@@ -39,6 +39,12 @@ body {
 .navbar__close {
   transform: var(--close-icon);
 }
-.navbar__links {
-  display: none;
+.navbar__menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.navbar__link{
+    color: #fff;
+    text-decoration: none;
 }
