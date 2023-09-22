@@ -324,23 +324,29 @@ footer {
     height: 100%;
   }
   .navbar__menu {
-    top: 5%;
-    left: -20px;
+    position: static;
     display: flex;
     clip-path: circle(100% at top right);
+    transition: none;
+    padding: 50px 0;
   }
   .navbar__header {
     flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
   }
   .navbar__container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
   }
   .navbar__icons {
     display: none;
+  }
+  .navbar__link {
+    font-size: 1.3rem;
   }
   .main__cards {
     flex-direction: row;
