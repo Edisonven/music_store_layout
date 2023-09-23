@@ -83,7 +83,7 @@ nav {
 .navbar__link {
   color: var(--color-secundario);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: linear 0.1s;
 }
 .navbar__link:hover {
