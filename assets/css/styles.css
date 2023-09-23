@@ -240,6 +240,9 @@ main {
   border: 1px solid #ffffff42;
   box-shadow: 5px 5px 10px #ff00001c;
 }
+.main__card__link:hover {
+  background-color:#ff000033 ;
+}
 .main__buttons {
   display: flex;
   align-items: center;
