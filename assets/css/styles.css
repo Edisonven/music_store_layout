@@ -84,6 +84,7 @@ nav {
   color: var(--color-secundario);
   text-decoration: none;
   font-size: 2rem;
+  transition: linear 0.1s;
 }
 .navbar__link:hover {
   background-color: var(--color-primario);
@@ -239,6 +240,7 @@ main {
   margin-top: 15px;
   border: 1px solid #ffffff42;
   box-shadow: 5px 5px 10px #ff00001c;
+  transition: linear 0.2s;
 }
 .main__card__link:hover {
   background-color:#ff000033 ;
