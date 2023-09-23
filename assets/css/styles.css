@@ -208,6 +208,7 @@ main {
 .main__card__img {
   border-radius: inherit;
   width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 .main_card_text {
