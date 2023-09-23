@@ -2,6 +2,7 @@
   --font-color: #a7a2a2;
   --color-primario: #ff00001c;
   --color-secundario: #fff;
+  --background--color:#000;
 }
 * {
   margin: 0;
@@ -274,7 +275,7 @@ footer {
 .footer__container {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: var(--background--color);
   color: var(--font-color);
   padding: 30px;
 }
@@ -380,7 +381,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    background-color: black;
+    background-color: var(--background--color);
   }
   .navbar__icons {
     display: none;
