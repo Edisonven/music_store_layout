@@ -307,8 +307,7 @@ footer {
   gap: 40px;
 }
 .footer__content {
-  display: flex;
-  justify-content: center;
+text-align: center;
 }
 
 /*DESKTOP DESIGN*/
