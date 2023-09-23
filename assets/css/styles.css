@@ -350,6 +350,7 @@ footer {
   }
   .navbar__link {
     font-size: 1.3rem;
+    color: var(--font-color);
   }
   .main__cards {
     flex-direction: row;
@@ -365,6 +366,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+  }
+  .header__link:hover{
+    opacity: 50%;
   }
   .footer__section__link:hover {
     text-decoration: underline;
