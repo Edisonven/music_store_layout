@@ -194,6 +194,7 @@ main {
 .main__card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 320px;
   border: 1px solid #ffffff42;
@@ -202,6 +203,7 @@ main {
   padding-bottom: 20px;
   overflow: hidden;
   box-shadow: 5px 5px 10px #ff00001c;
+  height: 600px;
 }
 .main__card__img {
   border-radius: inherit;
