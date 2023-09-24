@@ -390,6 +390,9 @@ footer {
   .main__cards {
     flex-direction: row;
   }
+  .main__card{
+    width: auto;
+  }
   .header__container {
     display: flex;
     flex-direction: column;
@@ -443,6 +446,9 @@ footer {
   .header__container {
     margin: 0;
     padding: 20px 60px;
+  }
+  .main__card{
+    width: 320px;
   }
   .footer__logo__img {
     width: 150px;
