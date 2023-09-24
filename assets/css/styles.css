@@ -85,11 +85,10 @@ nav {
   color: var(--color-secundario);
   text-decoration: none;
   font-size: 1.5rem;
-  transition: linear 0.1s;
 }
 .navbar__link:hover {
   background-color: var(--color-primario);
-  padding: 10px 30px;
+  outline: 15px solid var(--color-primario);
   border-radius: 10px;
 }
 .navbar__menu:target {
