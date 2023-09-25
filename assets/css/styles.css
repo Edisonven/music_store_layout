@@ -40,7 +40,6 @@ nav {
   --open-icon: scale(1);
   --close-icon: scale(0);
   position: relative;
-  transition: linear 0.4s;
   min-height: 80px;
 }
 .navbar__logo {
