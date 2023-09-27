@@ -36,7 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   grid-template-areas: "logo hamburguesa";
-  padding: 10px 20px;
+  padding: 10px 10px;
   --open-icon: scale(1);
   --close-icon: scale(0);
   position: relative;
