@@ -78,7 +78,8 @@ nav {
   height: 70vh;
   align-items: center;
   padding-top: 15px;
-  transition: all linear 0.3s;
+  transition: clip-path linear 0.3s;
+  background-color: rgba(0, 0, 0, 0.87);
 }
 .navbar__link {
   color: var(--color-secundario);
@@ -92,7 +93,6 @@ nav {
 }
 .navbar__menu:target {
   clip-path: circle(100% at top right);
-  background-color: rgba(0, 0, 0, 0.87);
 }
 .navbar__container:has(.navbar__menu:target) {
   --open-icon: scale(0);
